@@ -1,4 +1,5 @@
 import React from 'react'
+import "./footer.scss"
 
 const Footer = () => {
   return (
@@ -39,7 +40,17 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      <div className='bottom'></div>
+      <div className='bottom'>
+        <div className="left">
+            <span className="logo">FashioNest</span>
+            <span className="copyright">
+            © Copyright 2023. All Rights Reserved
+            </span>
+        </div>
+        <div className="right">
+            <img src='/img/payment.png' alt='Payment methods'/>
+        </div>
+      </div>
     </div>
   )
 }
