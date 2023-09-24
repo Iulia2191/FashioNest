@@ -35,15 +35,17 @@
       text-decoration: none;
       font-weight: bold;
       transition: color 0.2s;
+     
   
       &:hover {
-        color: #e6531a;
+        color: #263196;;
       }
     }
   
     .right {
         display: flex;
         align-items: center;
+
       
         .icons {
           display: flex;
@@ -73,12 +75,13 @@
         }
       }
       
-      /* Stilurile pentru meniul deschis */
+     
       .menu-items {
         width: max-content;
         display: none;
         background-color: #ffffff;
         flex-direction: column;
+        align-items: center;
         position: absolute;
         top: 55px;
         left: 0;
@@ -87,8 +90,7 @@
         z-index: 1000;
         font-size: 16px;
       
-        /* Stilurile pentru .left aici */
-        
+    
         .item {
           margin: 10px 0;
           display: flex;
