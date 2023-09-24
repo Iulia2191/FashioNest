@@ -1,54 +1,103 @@
-.navbar{
-    height: 80px;
-    .wrapper{
-       padding: 10px 30px; 
-       display: flex;
-       justify-content: space-between;
+/* Stilurile pentru bara de navigație */
+.navbar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.3s ease;
 
-       .item{
+  
+    &.menu-open {
+      .menu-items {
+        display: flex;
+      }
+    }
+  
+    .menu-icon {
+      cursor: pointer;
+      font-size: 30px;
+      margin-right: 10px;
+    }
+  
+    .center {
+      margin: 0 auto;
+      font-size: 50px;
+      font-family: 'Dancing Script', cursive;
+    }
+  
+    .link {
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+  
+      &:hover {
+        color: #e6531a;
+      }
+    }
+  
+    .right {
         display: flex;
         align-items: center;
-        font-size: 18px;
-       }
-       .left{
+      
+        .icons {
+          display: flex;
+          align-items: center;
+          margin-right: 50px;
+          cursor: pointer;
+        }
+      
+        .cartIcon {
+          position: relative;
+          cursor: pointer;
+      
+          span {
+            font-size: 12px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #263196;
+            color: white;
+            position: absolute;
+            right: -10px;
+            top: -10px;
             display: flex;
             align-items: center;
-            gap: 20px;
-       }
-       .center{
-        align-self: center;
-        font-size: 30px;
-        letter-spacing: 2px;
-       }
-       .right{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-       }
-
-       .icons{
-        display: flex;
-        gap: 10px;
-        color: #777;
-        cursor: pointer;
-
-        .cartIcon{
-            position: relative;
-            span{
-                font-size: 12px;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                background-color: #263196;
-                color: white;
-                position: absolute;
-                right: -10px;
-                top: -10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+            justify-content: center;
+          }
         }
-       }
-    }
-}
+      }
+      
+      /* Stilurile pentru meniul deschis */
+      .menu-items {
+        width: max-content;
+        display: none;
+        background-color: #ffffff;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        z-index: 1000;
+        font-size: 16px;
+      
+        /* Stilurile pentru .left aici */
+        
+        .item {
+          margin: 10px 0;
+          display: flex;
+          align-items: center;
+          margin: 10px;
+        }
+      
+        .MuiSvgIcon-root {
+          font-size: 18px;
+          margin-left: 5px;
+        }
+      }}

@@ -1,16 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import SearchIcon from '@mui/icons-material/Search'
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
+import MenuIcon from '@mui/icons-material/Menu'
 import { Link } from 'react-router-dom'
 import './Navbar.scss'
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen)
+  }
+
   return (
-    <div className='navbar'>
-      <div className='wrapper'>
+    <div className={`navbar ${menuOpen ? 'menu-open' : ''}`}>
+      <div className='menu-icon' onClick={toggleMenu}>
+        <MenuIcon />
+      </div>
+      <div className='center'>
+        <Link className='link' to='/'>
+          FashioNest
+        </Link>
+      </div>
+      <div className={`right ${menuOpen ? 'menu-open' : ''}`}>
+        <div className='icons'>
+          <SearchIcon />
+          <PersonOutlineIcon />
+          <FavoriteBorderIcon />
+          <div className='cartIcon'>
+            <ShoppingCartIcon />
+            <span>0</span>
+          </div>
+        </div>
+      </div>
+      <div className={`menu-items ${menuOpen ? 'menu-open' : ''}`}>
         <div className='left'>
           <div className='item'>
             <img src='.\img\flag.jpg' alt='American Flag' />
@@ -41,11 +67,6 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className='center'>
-          <Link className='link' to='/'>
-            FashioNest
-          </Link>
-        </div>
         <div className='right'>
           <div className='item'>
             <Link className='link' to='/'>
@@ -66,15 +87,6 @@ const Navbar = () => {
             <Link className='link' to='/'>
               Stores
             </Link>
-          </div>
-          <div className='icons'>
-            <SearchIcon />
-            <PersonOutlineIcon />
-            <FavoriteBorderIcon />
-            <div className='cartIcon'>
-              <ShoppingCartIcon />
-              <span>0</span>
-            </div>
           </div>
         </div>
       </div>
