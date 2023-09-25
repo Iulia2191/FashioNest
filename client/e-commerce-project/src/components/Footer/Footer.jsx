@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='top'>
-        <div className='item'>
+        <div className='item item1'>
           <h1>Categories</h1>
           <span>Women</span>
           <span>Men</span>
@@ -13,7 +13,7 @@ const Footer = () => {
           <span>Accessories</span>
           <span>New Arrivals</span>
         </div>
-        <div className='item'>
+        <div className='item item1'>
           <h1>Links</h1>
           <span>FAQ</span>
           <span>Pages</span>
@@ -21,7 +21,7 @@ const Footer = () => {
           <span>Compare</span>
           <span>Cookies</span>
         </div>
-        <div className='item'>
+        <div className='item item2'>
           <h1>About</h1>
           <span>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -30,7 +30,7 @@ const Footer = () => {
             et ea rebum.
           </span>
         </div>
-        <div className='item'>
+        <div className='item item2'>
           <h1>Contact</h1>
           <span>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
