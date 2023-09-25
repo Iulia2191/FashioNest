@@ -1,4 +1,4 @@
-import React from "react"
+
 import "./footer.scss"
 
 const Footer = () => {
@@ -52,6 +52,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
+ 
   )
 }
 
