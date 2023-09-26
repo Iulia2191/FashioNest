@@ -1,14 +1,14 @@
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import "./Slider.scss";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0); 
   const data = [
-    "./img/model-wears-beige-trench-coat-from-brand-new-collection.jpg",
+    "./img/beautiful-lady-beige-outfit-creates-new-dress-brunette-woman-white-shirt-pants-designing-fashionable-outfit.jpg",
     "./img/fashion-portrait-young-elegant-woman.jpg",
-    "./img/cute-young-girl-with-dark-wavy-hairstyle-bright-makeup-silk-dress-black-jacket-holding-sunglasses-hands-looking-away-against-beige-building-wall.jpg",
+    "./img/model-wears-beige-trench-coat-from-brand-new-collection.jpg",
   ];
 
   const prevSlide = () => {
@@ -23,7 +23,7 @@ const Slider = () => {
     <div className='slider'>
       <div className="container" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
         {data.map((image, index) => (
-          <img key={index} src={image} alt={`Slide ${index + 1}`} />
+          <img key={index} src={image} loading='lazy' alt={`Slide ${index + 1}`} />
         ))}
       </div>
       <div className="icons">

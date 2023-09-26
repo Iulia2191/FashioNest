@@ -1,5 +1,5 @@
-
 .navbar {
+  min-width: 300px;
   font-family: sans-serif !important;
   height: 70px;
   display: flex;
@@ -21,16 +21,14 @@
     }
   }
   .menu-icon {
-   
     cursor: pointer;
     margin-right: 10px;
   }
 
   .center {
     margin: 0 auto;
-    font-size: 50px;
-
-font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-family: "Mooli", sans-serif;
   }
 
   .link {
@@ -53,7 +51,9 @@ font-family: 'Playfair Display', serif;
       margin-right: 50px;
       cursor: pointer;
     }
-
+    .icon {
+      margin: 5px;
+    }
     .cartIcon {
       position: relative;
       cursor: pointer;
@@ -100,6 +100,19 @@ font-family: 'Playfair Display', serif;
     .MuiSvgIcon-root {
       font-size: 18px;
       margin-left: 5px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 10px;
+
+    .menu-icon {
+      margin-left: 0 !important;
+      .center {
+        font-size: 30px;
+      }
     }
   }
 }
