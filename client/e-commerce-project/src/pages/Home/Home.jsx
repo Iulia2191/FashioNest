@@ -4,14 +4,15 @@ import "./Home.scss"
 import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts'
 import Categories from '../../components/Categories/Categories'
 import Contact from '../../components/Contact/Contact'
+import Trending from '../../components/Trending/Trending'
 
 const Home = () => {
   return (
     <div className='home'>
       <Slider/>
-      <FeaturedProducts type="Featured" />
+      <Trending />
       <Categories/>
-      <FeaturedProducts type="Trending"/>
+      <FeaturedProducts type="Featured" />
       <Contact/>
     </div>
   )

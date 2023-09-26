@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from '../Card/Card'
 
 function Trending() {
     const data = [
@@ -6,43 +7,38 @@ function Trending() {
           id: 1,
           img: './img/full-shot-man-posing-with-different-clothes-collage.jpg',
           img2: './img/full-shot-man-posing-with-different-clothes-collage (1).jpg',
-          title: 'Purple fur coat',
-          isNew: true,
-          oldPrice: 95,
-          price: 70
+          title: 'Men collection',
+          
+          
         },
         {
           id: 2,
-          img: './img/full-shot-woman-posing-with-different-clothes-collage (1).jpg.client',
-          img2: './img/young-woman-dressed-summer-outfit-out-city.jpg',
-          title: 'White Shirt',
-          isNew: true,
-          oldPrice: 45,
-          price: 30
+          img: './img/full-shot-woman-posing-with-different-clothes-collage (1).jpg',
+          img2: './img/full-shot-woman-posing-with-different-clothes-collage (2).jpg',
+          title: 'Pants collection',
+          
         },
         {
           id: 3,
-          img: './img/slender-girl-great-mood-is-having-fun-dancing-with-bag-her-hands-shot-italian-model-wrap-dress.jpg',
-          img2: './img/girl-with-dimples-her-cheeks-good-mood-is-laughing-posing-portrait.jpg',
-          title: 'Pink Dress',
-          isNew: false,
-          oldPrice: 58,
-          price: 32
+          img: './img/full-shot-woman-posing-with-different-clothes-collage (5).jpg',
+          img2: './img/full-shot-woman-posing-with-different-clothes-collage.jpg',
+          title: 'Women collection',
+         
+         
         },
         {
           id: 4,
-          img: './img/full-length-portrait-cheerful-ginger-woman-romantic-caucasian-girl-orange-clothes.jpg',
-          img2: './img/full-length-portrait-shy-caucasian-girl-standing-yellow-indoor-shot-winsome-girl-orange-knitted-sweater-skirt.jpg',
-          title: 'Orange Skirt',
-          isNew: false,
-          oldPrice: 78,
-          price: 50
+          img:"./img/full-shot-woman-posing-with-different-clothes-collage (3).jpg",
+          img2: './img/full-shot-woman-posing-with-different-clothes-collage (4).jpg',
+          title: 'Tops collection',
+         
+         
         }
       ]
       return (
         <div className='featuredProducts'>
           <div className='top'>
-            <h1>{type} products</h1>
+            <h1>Popular Categories</h1>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -59,8 +55,6 @@ function Trending() {
         </div>
       )
     }
-    
-    export default FeaturedProducts
-}
+  
 
 export default Trending
