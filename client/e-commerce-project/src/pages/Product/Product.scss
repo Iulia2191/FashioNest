@@ -1,0 +1,17 @@
+.product{
+    padding: 20px 50px;
+    display: flex;
+    gap: 50px;
+    .left{
+        flex: 1;
+        .images{
+
+        }
+        .mainImg{
+
+        }
+    }
+    .right{
+        flex: 1;
+    }
+}
