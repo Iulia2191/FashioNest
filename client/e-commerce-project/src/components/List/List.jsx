@@ -129,6 +129,15 @@ function List() {
             isNew: false,
             oldPrice: 78,
             price: 50
+          },
+          {
+            id: 14,
+            img: '../img/full-length-portrait-cheerful-ginger-woman-romantic-caucasian-girl-orange-clothes.jpg',
+            img2: '../img/full-length-portrait-shy-caucasian-girl-standing-yellow-indoor-shot-winsome-girl-orange-knitted-sweater-skirt.jpg',
+            title: 'Orange Skirt',
+            isNew: false,
+            oldPrice: 78,
+            price: 50
           }
       ]
   return (

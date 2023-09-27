@@ -1,5 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './Product.scss'
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import BalanceIcon from '@mui/icons-material/Balance';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 const Product = () => {
   const [selectImg, setSelectImg] = useState(0)
@@ -22,7 +25,7 @@ const Product = () => {
       </div>
       <div className='right'>
         <h1>Long Red Dress</h1>
-        <span>$89</span>
+        <span className='price'>$189</span>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ut
           quod ipsam delectus dolorem cupiditate tempora nobis qui voluptas
@@ -33,6 +36,30 @@ const Product = () => {
           <button onClick={() => setQuantity((prev) => (prev === 1 ? 1 : prev -1))}>-</button>
           {quantity}
           <button onClick={() => setQuantity((prev) => prev + 1)}>+</button>
+        </div>
+        <button className="add">
+          <AddShoppingCartIcon />ADD TO CART
+        </button>
+        <div className="link">
+          <div className="item">
+            <FavoriteBorderIcon/>ADD TO FAVORITES
+          </div>
+          <div className="item">
+            <BalanceIcon/>ADD TO COMPARE
+          </div>
+        </div>
+        <div className="info">
+          <span>Vendor: Jane</span>
+          <span>Product type: Dress</span>
+          <span>Tag: Dress, Women</span>
+        </div>
+        <hr/>
+        <div className="details">
+          <span>DESCRIPTION</span>
+          <hr/>
+          <span>ADDITIONAL INFO</span>
+          <hr/>
+          <span>FAQ</span>
         </div>
       </div>
     </div>

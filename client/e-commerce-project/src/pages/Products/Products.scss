@@ -6,6 +6,7 @@
         position: sticky;
         height: 100%;
         top: 50px;
+        
 
         .filterItem{
             margin-bottom: 30px;
@@ -26,11 +27,50 @@
     }
     .right{
         flex: 3;
+        
         .catImage{
             width: 100%;
             height: 300px;
             object-fit: cover;
             margin-bottom: 50px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .products{
+        flex-direction: column;
+        
+    .left{
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 50px;
+      position: relative;
+    
+      
+
+        .filterItem{
+            margin: 20px;
+            font-size: 0.9em;
+            input{
+                width: 80%;
+            }
+           
+            }
+            .filter1{
+                flex:1
+            }
+            .filter2{
+                flex:2;
+            }
+            .filter3{
+                flex: 1;
+            }
+    }
+    }
+    .right{
+        margin-left: 20px;
+        .catImage{
+            display: none;
         }
     }
 }

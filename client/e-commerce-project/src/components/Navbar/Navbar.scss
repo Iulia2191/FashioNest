@@ -110,9 +110,15 @@
 
     .menu-icon {
       margin-left: 0 !important;
+    }
       .center {
         font-size: 30px;
       }
+      .right{
+        .icon{
+          margin: 0;
+        }
+      }
     }
   }
-}
+

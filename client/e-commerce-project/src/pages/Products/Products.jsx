@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import "./Products.scss"
 import List from '../../components/List/List'
 import { useParams } from 'react-router-dom'
@@ -12,7 +12,7 @@ const [sort, setSort] = useState(null)
   return (
     <div className='products'>
       <div className="left">
-        <div className="filterItem">
+        <div className="filterItem filter1">
           <h2>Product Categories</h2>
           <div className="inputItem">
             <input type="checkbox" id="1" value={1}></input>
@@ -27,15 +27,15 @@ const [sort, setSort] = useState(null)
             <label htmlFor='1'>Skirts</label>
           </div>
         </div>
-        <div className="filterItem">
+        <div className="filterItem filter2">
           <h2>Filter by price</h2>
           <div className="inputItem">
             <span>0</span>
-            <input type='range' min={0} max={1000} onChange={(e) => setMaxPrice(e.target.value)}/>
+            <input type='range'className='range' min={0} max={1000} onChange={(e) => setMaxPrice(e.target.value)}/>
             <span>{maxPrice}</span>
           </div>
         </div>
-        <div className="filterItem">
+        <div className="filterItem filter3">
           <h2>Sort by </h2>
           <div className="inputItem">
             <input type='radio' id='asc' value="asc" name='price'  onChange={e => setSort("asc")}/>
