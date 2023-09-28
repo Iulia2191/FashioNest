@@ -83,8 +83,26 @@
         align-items: center;
         display: 10px;
         color: #263196;
-        font-size: 14;
+        font-size: 14px;
       }
+    }
+
+    .info{
+      display: flex;
+      flex-direction: column;
+      color: gray;
+      font-size: 14px;
+      margin-top: 30px;
+
+      hr{
+        width: 100%;
+        border: 1px solid lightgray;
+      }
+
+    }
+    hr{
+      width: 100%;
+      border: 1px solid lightgray;
     }
   }
 }
