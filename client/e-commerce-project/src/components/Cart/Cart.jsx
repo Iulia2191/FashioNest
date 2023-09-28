@@ -1,10 +1,10 @@
 import DeleteIcon from '@mui/icons-material/Delete';
+import './Cart.scss'
 function Cart () {
   const data = [
     {
       id: 1,
-      img: './img/full-length-portrait-cheerful-ginger-woman-romantic-caucasian-girl-orange-clothes.jpg',
-      img2: './img/full-length-portrait-shy-caucasian-girl-standing-yellow-indoor-shot-winsome-girl-orange-knitted-sweater-skirt.jpg',
+      img: '../img/full-length-portrait-cheerful-ginger-woman-romantic-caucasian-girl-orange-clothes.jpg',
       title: 'Orange Skirt',
       desc: 'Orange Skirt',
       isNew: false,
@@ -13,8 +13,7 @@ function Cart () {
     },
     {
       id: 2,
-      img: './img/wonderful-young-woman-with-happy-smile-posing-bright-purple-background.jpg',
-      img2: './img/romantic-girl-stylish-purple-outfit-posing-with-shy-smile-studio.jpg',
+      img: '../img/wonderful-young-woman-with-happy-smile-posing-bright-purple-background.jpg',
       title: 'Purple fur coat',
       desc: 'Purple fur coat',
       isNew: true,
@@ -24,13 +23,13 @@ function Cart () {
   ]
   return (
     <div className='cart'>
-      <h1>Products in your cart</h1>
+      <h2>Products in your cart</h2>
       {data?.map(item => (
         <div className='item' key={item.id}>
           <img src={item.img} alt='' />
           <div className='details'>
-            <h1>{item.title}</h1>
-            <p>{item.desc.subString(0,100)}</p>
+            <h3>{item.title}</h3>
+            <p>{item.desc.substring(0,100)}</p>
             <div className="price">
                 1 x {item.price}
             </div>
