@@ -1,9 +1,9 @@
 import './FeaturedProducts.scss'
 import Card from '../Card/Card'
 import { useEffect, useState } from 'react'
-import axios from "axios"
+import axios from 'axios'
 
-const FeaturedProducts = ({type}) => {
+const FeaturedProducts = ({ type }) => {
   const data = [
     {
       id: 1,
@@ -45,24 +45,23 @@ const FeaturedProducts = ({type}) => {
 
   const [products, setProducts] = useState([])
 
-useEffect(()=>{
-
-
-const fetchData = async () =>{
-  const apiKey = '5bcca8a776a095bf7393165d5680d326fc2d21b173be8451a41ab02b4fed9e8a411ddc062ce8e3ddb346b5ebb0b393c5470799b08eb5234b4d89e2ab1571bd3d848147f604723330dce67280dc53b120f89a552e3a6b59fdc9b3213eab6d2d6384fae239eabeadace14fe4fd533aaeae4efd915a4c2ce614ecff01c34c8c4775'
-const api = 'http://localhost:1337/api'
-const env = import.meta.env
-  try{
-    const data = await axios.get(api+"/products",{
-      headers:{Authorization:"bearer " + apiKey}
-    });
-    console.log(data);
-  } catch(err){
-    console.log(err);
-  }
-}
-fetchData()
-},[])
+  useEffect(() => {
+    const fetchData = async () => {
+      const apiKey =
+        '5bcca8a776a095bf7393165d5680d326fc2d21b173be8451a41ab02b4fed9e8a411ddc062ce8e3ddb346b5ebb0b393c5470799b08eb5234b4d89e2ab1571bd3d848147f604723330dce67280dc53b120f89a552e3a6b59fdc9b3213eab6d2d6384fae239eabeadace14fe4fd533aaeae4efd915a4c2ce614ecff01c34c8c4775'
+      const api = 'http://localhost:1337/api'
+      const env = import.meta.env
+      try {
+        const data = await axios.get(api + '/products', {
+          headers: { Authorization: 'bearer ' + apiKey }
+        })
+        console.log(data)
+      } catch (err) {
+        console.log(err)
+      }
+    }
+    fetchData()
+  }, [])
 
   return (
     <div className='featuredProducts'>
@@ -78,7 +77,7 @@ fetchData()
       </div>
       <div className='bottom'>
         {data.map(item => (
-            <Card item={item} key={item.id}/>
+          <Card item={item} key={item.id} />
         ))}
       </div>
     </div>
