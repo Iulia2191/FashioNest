@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import SearchIcon from '@mui/icons-material/Search'
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
@@ -88,12 +87,6 @@ const Navbar = () => {
             <Link className='link' to='/'>
               Stores
             </Link>
-          </div>
-          <div className='item'>
-            <img src='.\img\flag.jpg' alt='American Flag' />
-            <KeyboardArrowDownIcon />
-            <span>USD</span>
-            <KeyboardArrowDownIcon />
           </div>
         </div>
       </div>
