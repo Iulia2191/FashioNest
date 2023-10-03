@@ -1,7 +1,7 @@
 import DeleteIcon from '@mui/icons-material/Delete'
 import './Cart.scss'
 import { useSelector } from 'react-redux/es/hooks/useSelector'
-import { removeItem } from '../../redux/cartReducer'
+import { removeItem, resetCart } from '../../redux/cartReducer'
 import { useDispatch } from 'react-redux'
 
 
