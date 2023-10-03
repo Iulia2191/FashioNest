@@ -7,11 +7,13 @@ import MenuIcon from '@mui/icons-material/Menu'
 import { Link } from 'react-router-dom'
 import Cart from '../Cart/Cart'
 import './Navbar.scss'
+import { useSelector } from 'react-redux/es/hooks/useSelector'
 
 const Navbar = () => {
 
   const [openCart, setOpenCart] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const products = useSelector((state) => state.cart.products)
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
@@ -40,7 +42,7 @@ const Navbar = () => {
           </div>
           <div className='cartIcon' onClick={()=> setOpenCart(!openCart)}>
             <ShoppingCartIcon />
-            <span>0</span>
+            <span>{products.length}</span>
           </div>
         </div>
       </div>

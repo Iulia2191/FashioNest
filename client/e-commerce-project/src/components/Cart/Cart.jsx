@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux'
 
 
 function Cart () {
-  const products = useSelector(state => state.cart.products)
+  const products = useSelector((state) => state.cart.products)
   const totalPrice = () => {
     let total = 0
     products.forEach(item => {
