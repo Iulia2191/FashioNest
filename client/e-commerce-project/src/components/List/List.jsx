@@ -10,7 +10,7 @@ const List = ({ subCats, maxPrice, sort, catId }) => {
   const sortParam = `sort=price:${sort}`;
 
   const { data, loading, error } = useFetch(
-    `/products?populate=*&[filters][categories][id]=${catId}${subCatFilters}&[filters][price][$lte]=${maxPrice}&sort=price:${sort}`
+    `/products?populate=*&[filters][categories][id]=${catId}${subCatFilters}&[filters][price][$lte]=${maxPrice}&sort=price`
   );
 
   return (

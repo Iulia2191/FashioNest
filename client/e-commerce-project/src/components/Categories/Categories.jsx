@@ -8,7 +8,7 @@ function Categories () {
       <div className='col'>
         <div className='row'>
           <img
-            src='https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            src='./img/women.jpg'
             alt=''
           />
           <button>
@@ -20,7 +20,7 @@ function Categories () {
         <div className='row'>
           {' '}
           <img
-            src='https://images.pexels.com/photos/157675/fashion-men-s-individuality-black-and-white-157675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            src='./img/new-season.jpg'
             alt=''
           />
           <button>
@@ -33,7 +33,7 @@ function Categories () {
       <div className='col'>
         <div className='row'>
           <img
-            src='https://images.pexels.com/photos/914668/pexels-photo-914668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            src='./img/shoes.jpg'
             alt=''
           />
           <button>
@@ -49,7 +49,7 @@ function Categories () {
           <div className='col'>
             <div className='row'>
               <img
-                src='https://images.pexels.com/photos/794062/pexels-photo-794062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                src='./img/shoes-cat.jpg'
                 alt=''
               />
               <button>
@@ -62,7 +62,7 @@ function Categories () {
           <div className='col'>
             <div className='row'>
               <img
-                src='https://images.pexels.com/photos/1163194/pexels-photo-1163194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                src='./img/accessories.jpg'
                 alt=''
               />
               <button>
@@ -75,7 +75,7 @@ function Categories () {
         </div>
         <div className='row'>
           <img
-            src='https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            src='./img/men-cat1.jpg'
             alt=''
           />
           <button>
