@@ -7,6 +7,7 @@ const Card = ({ item }) => {
   if (!item || !item.attributes || !item.attributes.img || !item.attributes.img.data) {
     console.error('Data is missing or not in the expected structure');
     return null;
+
   }
 
   return (
