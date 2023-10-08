@@ -6,7 +6,7 @@ import "./Slider.scss";
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0); 
   const data = [
-    "./img/beautiful-lady-beige-outfit-creates-new-dress-brunette-woman-white-shirt-pants-designing-fashionable-outfit.jpg",
+    "./img/Dark Simple Minimalist Modern Photo Collage Fashion Facebook Cover.png",
     "./img/fashion-portrait-young-elegant-woman.jpg",
     "./img/model-wears-beige-trench-coat-from-brand-new-collection.jpg",
   ];
