@@ -1,8 +1,10 @@
+
 .favorite {
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 18%;
 
   h2 {
     font-size: 2em;
@@ -45,7 +47,6 @@
       }
 
       .add {
-       
         padding: 10px 15px;
         background-color: #263196;
         color: white;
@@ -89,6 +90,7 @@
     cursor: pointer;
     color: #c82333;
     transition: color 0.3s;
+    margin-bottom: auto;
 
     &:hover {
       color: #0056b3;

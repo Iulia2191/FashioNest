@@ -73,11 +73,12 @@
       border: none;
       font-weight: 500;
     }
-    .favorite {
+    .favorite-button {
       padding: 10px;
       display: flex;
       flex-direction: row;
       justify-content: center;
+      align-items: center;
       gap: 20px;
       width: 250px;
       background-color: #e98fa3;
@@ -115,6 +116,25 @@
     hr {
       width: 100%;
       border: 1px solid lightgray;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .product{
+    display: flex;
+    flex-direction: column;
+    .left{
+      display: flex;
+      flex-direction: column;
+      .images{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        img{
+          width: 50%;
+          
+        }
+      }
     }
   }
 }

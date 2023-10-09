@@ -7,6 +7,7 @@ import { addToCart, removeItem } from '../../redux/cartReducer';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import useFetch from '../../hooks/useFetch';
 
+
 function Favorite() {
   const id = useParams().id;
   const { data, loading, error } = useFetch(`/products/${id}?populate=*`);
@@ -19,7 +20,7 @@ function Favorite() {
       <h2>Favorite Products</h2>
       <div className='wrapper'>
         {products.length === 0 ? ( 
-            
+
           <p>You do not have favorite products.</p>
         ) : (
           products.map((item) => (

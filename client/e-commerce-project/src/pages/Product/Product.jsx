@@ -83,7 +83,7 @@ const Product = () => {
               <AddShoppingCartIcon /> ADD TO CART
             </button>
             <button
-              className="favorite"
+              className="favorite-button"
               onClick={() =>
                 dispatch(
                   addToFavorite({
