@@ -8,8 +8,8 @@
     gap: 20px;
     .images {
       flex: 1;
-    
-      img{
+
+      img {
         width: 100%;
         height: 150px;
         object-fit: cover;
@@ -19,7 +19,7 @@
     }
     .mainImg {
       flex: 5;
-      img{
+      img {
         width: 100%;
         max-height: 800px;
         object-fit: cover;
@@ -31,25 +31,25 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
-    .price{
-    font-style: 30px;
-    color: #263196;
-    font-weight: 500;
+
+    .price {
+      font-style: 30px;
+      color: #263196;
+      font-weight: 500;
     }
 
-    p{
+    p {
       font-size: 18px;
       font-weight: 300;
       text-align: justify;
     }
 
-    .quantity{
+    .quantity {
       display: flex;
       gap: 10px;
       align-items: center;
 
-      button{
+      button {
         width: 50px;
         height: 50px;
         display: flex;
@@ -60,7 +60,7 @@
       }
     }
 
-    .add{
+    .add {
       width: 250px;
       padding: 10px;
       background-color: #263196;
@@ -73,27 +73,25 @@
       border: none;
       font-weight: 500;
     }
-    .favorite{
-      
-        width: 250px;
-        padding: 10px;
-        background-color: #E98FA3;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        cursor: pointer;
-        border: none;
-        font-weight: 500;
-    
+    .favorite {
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      width: 250px;
+      background-color: #e98fa3;
+      color: white;
+      cursor: pointer;
+      border: none;
+      font-weight: 500;
     }
 
-    .link{
+    .link {
       display: flex;
       gap: 20px;
 
-      .item{
+      .item {
         display: flex;
         align-items: center;
         display: 10px;
@@ -102,20 +100,19 @@
       }
     }
 
-    .info{
+    .info {
       display: flex;
       flex-direction: column;
       color: gray;
       font-size: 14px;
       margin-top: 30px;
 
-      hr{
+      hr {
         width: 100%;
         border: 1px solid lightgray;
       }
-
     }
-    hr{
+    hr {
       width: 100%;
       border: 1px solid lightgray;
     }
