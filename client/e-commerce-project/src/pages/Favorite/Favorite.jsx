@@ -8,8 +8,9 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart'
 import useFetch from '../../hooks/useFetch'
 
 function Favorite () {
-  const id = useParams().id
-  const { data, loading, error } = useFetch(`/products/${id}?populate=*`)
+    const id = useParams().id;
+    const { data, loading, error } = useFetch(`/products/${id}?populate=*`);
+    
   const products = useSelector(state => state.favorite.products) || []
   const dispatch = useDispatch()
 
@@ -25,22 +26,23 @@ function Favorite () {
               <div className='price'>$ {item.price}</div>
             </div>
             <button
-              className='add'
-              onClick={() =>
-                dispatch(
-                  addToCart({
-                    id: data.id,
-                    title: data.attributes.title,
-                    desc: data.attributes.desc,
-                    price: data.attributes.price,
-                    img: data.attributes.img.data.attributes.url,
-                    quantity: 1,
-                  })
-                )
-              }
-            >
-              <AddShoppingCartIcon /> ADD TO CART
-            </button>
+  className='add'
+  onClick={() =>
+    dispatch(
+      addToCart({
+        id: item.id, 
+        title: item.title,
+        desc: item.desc,
+        price: item.price,
+        img: item.img,
+        quantity: 1,
+      })
+    )
+  }
+>
+  <AddShoppingCartIcon /> ADD TO CART
+</button>
+
             <button
               className='delete'
               onClick={() => dispatch(removeItemFavorite(item.id))} 

@@ -17,6 +17,7 @@ const Product = () => {
 
   const dispatch = useDispatch();
   const { data, loading, error } = useFetch(`/products/${id}?populate=*`);
+  
 
   return (
     <div className="product">
