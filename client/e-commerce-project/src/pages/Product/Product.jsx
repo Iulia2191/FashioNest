@@ -3,11 +3,12 @@ import { useState } from "react";
 import "./Product.scss";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import BalanceIcon from "@mui/icons-material/Balance";
 import useFetch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cartReducer";
+import { addToFavorite } from '../../redux/favoriteReducer';
+
 
 const Product = () => {
   const id = useParams().id;
@@ -80,14 +81,24 @@ const Product = () => {
             >
               <AddShoppingCartIcon /> ADD TO CART
             </button>
-            <div className="links">
-              <div className="item">
-                <FavoriteBorderIcon /> ADD TO WISH LIST
-              </div>
-              <div className="item">
-                <BalanceIcon /> ADD TO COMPARE
-              </div>
-            </div>
+            <button
+              className="favorite"
+              onClick={() =>
+                dispatch(
+                  addToFavorite({
+                    id: data.id,
+                    title: data.attributes.title,
+                    desc: data.attributes.desc,
+                    price: data.attributes.price,
+                    img: data.attributes.img.data.attributes.url,
+                    quantity,
+                  })
+                )
+              }
+            >
+              <FavoriteBorderIcon /> ADD TO FAVORITES
+            </button>
+       
             <div className="info">
               <span>Vendor: Polo</span>
               <span>Product Type: T-Shirt</span>
