@@ -48,7 +48,7 @@
     .icons {
       display: flex;
       align-items: center;
-      margin-right: 10px;
+      margin-right: 50px;
       cursor: pointer;
     }
     .icon {
@@ -114,7 +114,11 @@
       .center {
         font-size: 30px;
       }
-     
+     .right{
+      .icons{
+        margin-right: 10px;
+      }
+     }
     }
   }
 
