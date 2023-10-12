@@ -45,9 +45,11 @@ const Navbar = () => {
       </div>
       <div className={`right ${menuOpen ? 'menu-open' : ''}`}>
         <div className='icons'>
-          <div className='icon'>
+          <Link to='/search'>
+          <div className='icon searchIcon'>
             <SearchIcon />
           </div>
+          </Link>
           <div className='icon'>
             <PersonOutlineIcon />
           </div>
@@ -75,12 +77,12 @@ const Navbar = () => {
             </Link>
           </div>
           <div className='item'>
-            <Link className='link' to='/products/1'>
+            <Link className='link' to='/products/3'>
               Children
             </Link>
           </div>
           <div className='item'>
-            <Link className='link' to='/products/1'>
+            <Link className='link' to='/products/4'>
               Accessories
             </Link>
           </div>

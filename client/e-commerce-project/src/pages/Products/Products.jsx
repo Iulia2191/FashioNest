@@ -83,7 +83,7 @@ const Products = () => {
       <div className="right">
         <img
           className='catImage'
-          src='../img/concept-search-young-stylish-girl-detective-clothing-looking-through-magnifying-glass-big-eye.jpg'
+          src='../img/cover.jpg'
           alt=''
         />
         <List catId={catId} maxPrice={maxPrice} sort={sort} subCats={selectedSubCats} />

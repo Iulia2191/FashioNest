@@ -11,6 +11,7 @@ import Products from "./pages/Products/Products";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Favorite from "./pages/Favorite/Favorite";
+import Search from "./pages/Search/Search";
 import "./app.scss";
 
 
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/favorite", 
         element: <Favorite />
+      },
+      {
+        path: "/search", 
+        element: <Search />
       }
     ]
   }
