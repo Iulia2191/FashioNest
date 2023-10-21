@@ -64,19 +64,10 @@ const Products = () => {
               id="asc"
               value="asc"
               name="price"
+              checked= "true"
               onChange={(e) => setSort("asc")}
             />
             <label htmlFor="asc">Price (Lowest first)</label>
-          </div>
-          <div className="inputItem">
-            <input
-              type="radio"
-              id="desc"
-              value="desc"
-              name="price"
-              onChange={(e) => setSort("desc")}
-            />
-            <label htmlFor="desc">Price (Highest first)</label>
           </div>
         </div>
       </div>

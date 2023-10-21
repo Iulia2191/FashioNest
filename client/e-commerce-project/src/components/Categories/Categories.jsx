@@ -66,7 +66,7 @@ function Categories () {
                 alt=''
               />
               <button>
-                <Link className='link' to={'/products/1'}>
+                <Link className='link' to={'/products/4'}>
                   Accessories
                 </Link>
               </button>
@@ -79,7 +79,7 @@ function Categories () {
             alt=''
           />
           <button>
-            <Link className='link' to={'/products/1'}>
+            <Link className='link' to={'/products/2'}>
               Men
             </Link>
           </button>

@@ -50,9 +50,11 @@ const Navbar = () => {
             <SearchIcon />
           </div>
           </Link>
-          <div className='icon'>
+          <Link to='/authentification'>
+          <div className='icon auth-icon'>
             <PersonOutlineIcon />
           </div>
+          </Link>
           <Link className='link' to='/favorite'>
             <div className='icon'>
               <FavoriteBorderIcon />

@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 import Favorite from "./pages/Favorite/Favorite";
 import Search from "./pages/Search/Search";
 import "./app.scss";
+import Authentification from "./pages/Authentification/Authentification";
 
 
 const Layout = () =>{
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "/search", 
         element: <Search />
+      },
+      {
+        path: "//authentification", 
+        element: <Authentification />
       }
     ]
   }
