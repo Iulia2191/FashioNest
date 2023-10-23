@@ -9,6 +9,7 @@ export default function Authentification() {
   return (
     <div className='auth'>
         <SignIn/>
+        <p>OR</p>
         <SignUp/>
         <AuthDetails/>
     </div>
