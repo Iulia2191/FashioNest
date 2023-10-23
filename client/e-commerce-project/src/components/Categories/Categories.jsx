@@ -20,12 +20,12 @@ function Categories () {
         <div className='row'>
           {' '}
           <img
-            src='./img/new-season.jpg'
+            src='./img/kids-having-fun-with-colorful-shapes.jpg'
             alt=''
           />
           <button>
-            <Link className='link' to={'/products/1'}>
-              New Season
+            <Link className='link' to={'/products/3'}>
+              Children
             </Link>
           </button>
         </div>
