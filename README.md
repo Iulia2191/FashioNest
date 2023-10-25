@@ -3,36 +3,44 @@
 FashioNest, an e-commerce website developed using React JS Vite. I've employed Redux for state management, integrated Strapi for handling products and categories, utilized Axios for smooth data retrieval, implemented Stripe for secure payments, and ensured user authentication through Firebase.
 
 Home page
+![home-page](https://github.com/Iulia2191/E-commerce-website/assets/125976840/ba044eec-001c-45b7-ab60-cdbde0c551f1)
 
-![image](https://github.com/Iulia2191/E-commerce-website/assets/125976840/e5ca7d0d-8fdb-4e84-8660-4b92aae0fa13)
+
 
 Products
 
-![image](https://github.com/Iulia2191/E-commerce-website/assets/125976840/02780102-334d-4750-ade8-87e541872407)
+![women-cat](https://github.com/Iulia2191/E-commerce-website/assets/125976840/dacdf234-2ee3-4de8-b4b7-b4b834d1bd20)
+
 
 Product page
 
-![image](https://github.com/Iulia2191/E-commerce-website/assets/125976840/6babab24-fef1-4556-895f-b756a015ce34)
+![product](https://github.com/Iulia2191/E-commerce-website/assets/125976840/96d827f4-515e-4588-8ffc-0462e0641bba)
+
 
 Cart
 
-![cart](https://github.com/Iulia2191/E-commerce-website/assets/125976840/5920ad63-facb-46ef-a7bc-dc289a4ad6c6)
+![cart](https://github.com/Iulia2191/E-commerce-website/assets/125976840/263d8d56-b04f-4281-82c0-aac09a0c298e)
+
 
 Payment
 
-![payment](https://github.com/Iulia2191/E-commerce-website/assets/125976840/bee85867-825b-41a9-b3d8-fa21d7eae48e)
+![payment](https://github.com/Iulia2191/E-commerce-website/assets/125976840/882fb1bb-773b-456b-bab7-8418aee589bd)
+
 
 Favorites page
 
-![favorites](https://github.com/Iulia2191/E-commerce-website/assets/125976840/f0572480-4e03-47ae-9c3c-71608c27410e)
+![favorites](https://github.com/Iulia2191/E-commerce-website/assets/125976840/91254f28-6860-4075-adab-82f8ba6358d3)
+
 
 Search product page
 
-![search](https://github.com/Iulia2191/E-commerce-website/assets/125976840/3e560264-56d0-47f5-862b-a81f2e2ac5f5)
+![search](https://github.com/Iulia2191/E-commerce-website/assets/125976840/813a0f81-090d-40b1-87c0-537efca2483a)
+
 
 Authentification page
 
-![authentification](https://github.com/Iulia2191/E-commerce-website/assets/125976840/56327c0f-3667-48ee-94c8-d43c481ad289)
+![authentification](https://github.com/Iulia2191/E-commerce-website/assets/125976840/1f60ad70-f18b-463a-a9bd-04d0673b648e)
+
 
 
 
