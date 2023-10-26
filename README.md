@@ -1,4 +1,4 @@
-# FashioNest : E-commerce-website
+# FashioNest: E-commerce-website
 
 FashioNest, an e-commerce website developed using React JS Vite. I've employed Redux for state management, integrated Strapi for handling products and categories, utilized Axios for smooth data retrieval, implemented Stripe for secure payments, and ensured user authentication through Firebase.
 
